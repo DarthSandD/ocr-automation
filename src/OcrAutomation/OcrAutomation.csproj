@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Version>2.2.0</Version>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <FileVersion>2.2.0.0</FileVersion>
+    <Product>OCR Automation Tool</Product>
+    <Company>Darren LLC</Company>
+    <Description>Capture any window or screen region, extract text with OCR, arrange into rows, save raster images, and run mapped automation.</Description>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <!-- NOTE: PublishSingleFile must stay FALSE. Tesseract 5.2.0's native loader
+         (InteropDotNet) resolves libraries via Assembly.Location, which is empty
+         in single-file bundles -> ArgumentNullException, OCR engine never starts.
+         Verified 2026-09-10: single-file = No OCR engine; loose folder = 90% OCR.
+         Use publish-loose/ as the official ship. -->
+    <PublishSingleFile>false</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="OpenCvSharp4" Version="4.10.0.20240616" />
+    <PackageReference Include="OpenCvSharp4.Extensions" Version="4.10.0.20240616" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20240616" />
+    <PackageReference Include="PDFtoImage" Version="2.5.0" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\assets\tessdata\eng.traineddata">
+      <Link>Resources\eng.traineddata</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

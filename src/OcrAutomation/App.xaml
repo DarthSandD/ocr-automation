@@ -1,0 +1,14 @@
+<Application x:Class="OcrAutomation.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OcrAutomation">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/ModernTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+            <local:ConfidenceToColorConverter x:Key="ConfidenceToColorConverter"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

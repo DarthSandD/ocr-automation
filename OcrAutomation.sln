@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4636DCA3-C4A0-48CC-BBD5-41C7D70DD735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcrAutomation", "src\OcrAutomation\OcrAutomation.csproj", "{1CB32B05-A019-4259-90BC-3D3C64559CCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{38FE5E45-D3D2-4051-82F9-D7D52D26FD86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcrAutomation.Tests", "tests\OcrAutomation.Tests\OcrAutomation.Tests.csproj", "{3D164A55-C927-4E7D-8838-D6B1305FE749}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CB32B05-A019-4259-90BC-3D3C64559CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB32B05-A019-4259-90BC-3D3C64559CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB32B05-A019-4259-90BC-3D3C64559CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB32B05-A019-4259-90BC-3D3C64559CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D164A55-C927-4E7D-8838-D6B1305FE749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D164A55-C927-4E7D-8838-D6B1305FE749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D164A55-C927-4E7D-8838-D6B1305FE749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D164A55-C927-4E7D-8838-D6B1305FE749}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CB32B05-A019-4259-90BC-3D3C64559CCA} = {4636DCA3-C4A0-48CC-BBD5-41C7D70DD735}
+		{3D164A55-C927-4E7D-8838-D6B1305FE749} = {38FE5E45-D3D2-4051-82F9-D7D52D26FD86}
+	EndGlobalSection
+EndGlobal

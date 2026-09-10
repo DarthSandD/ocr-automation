@@ -1,0 +1,81 @@
+{
+  "rules": [
+    {
+      "name": "Click OK button",
+      "pattern": "OK",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "Click",
+          "actionValue": ""
+        }
+      ]
+    },
+    {
+      "name": "Click Cancel button",
+      "pattern": "Cancel",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "Click",
+          "actionValue": ""
+        }
+      ]
+    },
+    {
+      "name": "Press Enter",
+      "pattern": "(Submit|Apply|Save)",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "Keystroke",
+          "actionValue": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Type Username",
+      "pattern": "Username:",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "SetText",
+          "actionValue": "admin"
+        }
+      ]
+    },
+    {
+      "name": "Type Password",
+      "pattern": "Password:",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "SetText",
+          "actionValue": "secret"
+        }
+      ]
+    },
+    {
+      "name": "Navigate to Next",
+      "pattern": "Next",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "Click",
+          "actionValue": ""
+        }
+      ]
+    },
+    {
+      "name": "Tab to next field",
+      "pattern": "Email",
+      "enabled": true,
+      "actions": [
+        {
+          "actionType": "Keystroke",
+          "actionValue": "Tab"
+        }
+      ]
+    }
+  ]
+}
