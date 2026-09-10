@@ -1,4 +1,9 @@
-# OCR Automation Tool v2.0.0
+# OCR Automation Tool v2.2.0
+
+> Offline Windows OCR automation — capture, read, and rasterize anything on screen.
+> **[⬇ Download v2.2.0 for Windows](https://github.com/DarthSandD/ocr-automation/releases/latest)** (portable ZIP, no install, no admin)
+
+![OCR Automation v2.2 dark UI](screenshots/v2.2-import-ui.png)
 
 A Windows 10/11 desktop utility for capturing a window or screen region, extracting text with OCR, arranging it into rows, saving raster images, and running explicitly triggered mapping actions. It does not monitor in the background or install global hooks.
 
