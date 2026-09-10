@@ -16,3 +16,4 @@ tools/*.log
 Thumbs.db
 .idea/
 .vscode/
+*.zip
